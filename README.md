@@ -1,34 +1,45 @@
 # Legal pages (GitHub Pages) — Rendix
 
-Mesmo padrão do **Registro+** (`legal-pages/` → GitHub Pages).
+Mesmo padrão do **Registro+** (`professor-app/legal-pages/` → GitHub Pages).
 
-## URL para a Play Console
+## URLs publicadas
 
-```
-https://deneralbuquerque37-boop.github.io/rendix/privacidade.html
-```
+| Uso | URL |
+|-----|-----|
+| **Site (landing + SEO)** | `https://deneralbuquerque37-boop.github.io/rendix/` |
+| **Política de privacidade** | `https://deneralbuquerque37-boop.github.io/rendix/privacidade.html` |
+| **robots / sitemap** | `…/robots.txt` · `…/sitemap.xml` |
+
+Plano detalhado: [`docs/PLAN-site-github-pages-rendix.md`](../docs/PLAN-site-github-pages-rendix.md).
+
+## Play Console
+
+- **Site do app:** raiz `https://deneralbuquerque37-boop.github.io/rendix/`
+- **Política de privacidade:** `…/privacidade.html`
 
 ## Publicar (conta `deneralbuquerque37-boop`)
 
-1. No GitHub: **New repository** → nome `rendix` → **Public** (sem README).
-2. No PowerShell, a partir desta pasta:
+Repo: `https://github.com/deneralbuquerque37-boop/rendix`
+
+```powershell
+cd c:\Users\dener\assessor-app\legal-pages
+git add .
+git commit -m "docs: landing SEO Rendix + sitemap"
+git push origin main
+```
+
+Se o repo ainda não existe:
 
 ```powershell
 cd c:\Users\dener\assessor-app\legal-pages
 git init
 git add .
-git commit -m "docs: política de privacidade Rendix (Pages)"
+git commit -m "docs: site Rendix GitHub Pages"
 git branch -M main
 git remote add origin https://github.com/deneralbuquerque37-boop/rendix.git
 git push -u origin main
 ```
 
-3. No repo GitHub → **Settings → Pages**:
-   - Source: **Deploy from a branch**
-   - Branch: `main` / `/ (root)`
-   - Save
+**Settings → Pages:** branch `main`, folder `/ (root)`.
 
-4. Aguarde ~1 minuto e abra a URL acima no Chrome.
-5. Cole a mesma URL em Play Console → Política de Privacidade → **Salvar**.
-
-Arquivo espelho (rascunho): `docs/legal/privacidade.html`.
+Arquivo espelho da política: `docs/legal/privacidade.html`.

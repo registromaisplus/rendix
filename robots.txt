@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://deneralbuquerque37-boop.github.io/rendix/sitemap.xml
