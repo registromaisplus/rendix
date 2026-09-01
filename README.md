@@ -43,3 +43,14 @@ git push -u origin main
 **Settings → Pages:** branch `main`, folder `/ (root)`.
 
 Arquivo espelho da política: `docs/legal/privacidade.html`.
+## AdMob (app-ads.txt)
+
+Google exige `app-ads.txt` na **raiz do domínio** do site do desenvolvedor (Play → Site), não só em `/rendix/`:
+
+| Onde | URL |
+|------|-----|
+| **Obrigatório (domínio raiz)** | `https://deneralbuquerque37-boop.github.io/app-ads.txt` → repo `deneralbuquerque37-boop.github.io` (pasta `github-user-site/` no monorepo) |
+| **Cópia (projeto Pages)** | `https://deneralbuquerque37-boop.github.io/rendix/app-ads.txt` → este repo |
+
+Após publicar: AdMob → app → **Verificar se há atualizações** (pode levar até 24h).
+
