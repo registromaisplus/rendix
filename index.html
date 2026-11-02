@@ -18,6 +18,8 @@
     <meta property="og:url" content="https://registromaisplus.github.io/rendix/" />
     <meta property="og:image" content="https://registromaisplus.github.io/rendix/img/rendix-feature-graphic.png" />
     <meta name="theme-color" content="#07726B" />
+    <link rel="icon" href="./img/rendix-icon-512.png" type="image/png" sizes="512x512" />
+    <link rel="apple-touch-icon" href="./img/rendix-icon-512.png" />
     <style>
       :root {
         color-scheme: light;
@@ -58,11 +60,21 @@
         margin: 0 auto;
       }
       .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
         font-size: 0.95rem;
         font-weight: 700;
         letter-spacing: 0.02em;
         margin: 0 0 16px;
         color: #ffffff;
+      }
+      .brand img {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        flex-shrink: 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
       }
       .hero h1 {
         font-size: clamp(1.6rem, 4vw, 2rem);
@@ -210,14 +222,24 @@
         "author": {
           "@type": "Organization",
           "name": "Rendix Simuladores"
-        }
+        },
+        "image": "https://registromaisplus.github.io/rendix/img/rendix-icon-512.png"
       }
     </script>
   </head>
   <body>
     <header class="hero">
       <div class="hero-inner">
-        <p class="brand">Rendix Simuladores</p>
+        <p class="brand">
+          <img
+            src="./img/rendix-icon-512.png"
+            alt=""
+            width="48"
+            height="48"
+            decoding="async"
+          />
+          <span>Rendix Simuladores</span>
+        </p>
         <h1>Simuladores de renda fixa no celular — sem cadastro.</h1>
         <p class="lead">
           Comece grátis com Poupança e Tesouro Selic (com anúncios). Amplie com Essencial ou Completo —
